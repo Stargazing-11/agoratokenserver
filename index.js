@@ -6,6 +6,9 @@ const PORT = process.env.PORT || 8080;
 const APP_ID = process.env.APP_ID;
 const APP_CERTIFICATE = process.env.APP_CERTIFICATE;
 
+console.log("APP_ID", APP_ID);
+console.log("APP_Cer", APP_CERTIFICATE);
+
 const app = express();
 
 const nocache = (req, res, next) => {
